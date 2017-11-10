@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main_page"
     android:layout_width="match_parent"
@@ -8,21 +8,20 @@
     android:paddingLeft="@dimen/main_activity_horizontal_margin"
     android:paddingRight="@dimen/main_activity_horizontal_margin"
     android:paddingTop="@dimen/main_activity_vertical_margin"
-    tools:context="com.reserveat.reserveat.MainPageActivity">
+    tools:context="com.reserveat.reserveat.MainPageActivity"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         style="@style/Divider">
 
-
-
-
           <Button
-            android:text="Sort"
+            android:text="Sort ⬇"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:id="@+id/Sort"
             android:background="@android:color/white"
             android:layout_alignParentTop="true"
@@ -32,10 +31,60 @@
             android:text="Refine"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:id="@+id/Refine"
             android:background="@android:color/white"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true" />
     </LinearLayout>
-</RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@android:color/white"
+        style="@style/Divider">
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:layout_weight="1"
+        style="@style/Divider"
+        android:background="@color/colorPrimary"        android:orientation="horizontal" >
+
+        <Button
+            android:text="notification"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/notification"
+            android:background="@android:color/transparent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="add"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/add_cancellation"
+            android:background="@android:color/transparent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
