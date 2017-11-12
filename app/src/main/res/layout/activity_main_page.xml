@@ -27,6 +27,11 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true" />
 
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"/>
+
         <Button
             android:text="Refine"
             android:layout_width="0dp"
@@ -74,7 +79,12 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true" />
 
-        <Button
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"/>
+
+        p<Button
             android:text="add"
             android:layout_width="0dp"
             android:layout_weight="1"
