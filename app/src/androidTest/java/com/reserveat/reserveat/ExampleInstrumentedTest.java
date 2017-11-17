@@ -24,3 +24,6 @@ public class ExampleInstrumentedTest {
         assertEquals("com.reserveat.reserveat", appContext.getPackageName());
     }
 }
+
+
+/* yuval check */
